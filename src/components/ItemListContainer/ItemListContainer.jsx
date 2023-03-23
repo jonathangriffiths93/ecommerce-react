@@ -1,4 +1,4 @@
-function ItemListContainer() {
+function ItemListContainer(props) {
     return (<>
     <div class="container-fluid contenedor">
     <img
@@ -9,10 +9,9 @@ function ItemListContainer() {
         alt="kratos love"
         loading="lazy"
       />
-      <div class="centrado holis">Holis</div>
+      <h1 class="centrado holis"> Hola { props.greeting }</h1>
     </div>
         </>
     )
 }
-
     export default ItemListContainer
