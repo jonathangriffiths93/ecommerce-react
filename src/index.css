@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #d3612c;
+
+}
+
+.navbarBackground {
+  background-color: rgb(112, 28, 28);
+}
+
+.tituloTexto {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 5px;
+  background-color: chocolate;
+}
+.subTituloTexto {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 5px;
+  color: aliceblue;
+  background-color: rgb(69, 69, 69);
+}
+
+.contenedor{
+  position:relative;
+  display: inline-block;
+  text-align: center;
+  background-color: brown;
+}
+
+
+.centrado{
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+
+.holis{
+ font-size: 200px;
+ color: pink;
+}
