@@ -1,16 +1,11 @@
+import { useEffect, useState } from "react"
+import Contenedor from "../Contenedor/Contenedor"
+import { useParams } from "react-router-dom"
+
 function ItemListContainer(props) {
+   const{cid}= useParams()
     return (<>
-    <div class="container-fluid contenedor">
-    <img
-        text="hello"
-        src="https://media.giphy.com/media/dXavF0qnux9vNtNHfc/giphy-downsized-large.gif"
-        class="me-2 "
-        height="500px"
-        alt="kratos love"
-        loading="lazy"
-      />
-      <h1 class="centrado holis"> Hola { props.greeting }</h1>
-    </div>
+    <Contenedor/>
         </>
     )
 }
