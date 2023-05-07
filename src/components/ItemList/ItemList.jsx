@@ -1,4 +1,3 @@
-import { mockFetch } from "../../utils/mockFetch/mockFetch"
 import Item from "../Item/Item"
 
 

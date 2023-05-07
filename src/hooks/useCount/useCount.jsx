@@ -1,15 +1,15 @@
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 
-export const useCount = (initial=0, max=10, min=1) => {
+export const useCount = (initial=1, max=10, min=1) => {
     if(initial<min || initial>max) initial = min
-    const [contador, setContador] = useState(0)
+    const [contador, setContador] = useState(initial)
     
 
-    const sumar = () => {
+    const increment = () => {
         if (contador < max)
       setContador(contador + 1)}
 
-    const restar = () => {
+    const decrement = () => {
     if (contador > initial)
         setContador(contador - 1)
          }
@@ -17,6 +17,6 @@ export const useCount = (initial=0, max=10, min=1) => {
         setContador(initial)
     }
 
-    return {contador, sumar, restar, reset}
+    return {contador, increment, decrement, reset}
 
 }
